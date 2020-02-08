@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="Computer Shop"
+                android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+<!--                tools:layout_editor_absoluteY="19dp">-->
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Firstname: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lastname: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <EditText
+                            android:id="@+id/surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Email Adress: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Phone Number: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <EditText
+                            android:id="@+id/phone_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="phone"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Postal Adress: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <EditText
+                            android:id="@+id/adress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPostalAddress"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Payment Options: "
+                            android:textColor="@android:color/white"
+                            android:textSize="22dp" />
+
+                        <Spinner
+                            android:id="@+id/payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white" />
+
+                        <CheckBox
+                            android:id="@+id/verify"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:cursorVisible="true"
+                            android:gravity="center"
+                            android:text="I agree with terms. "
+                            android:textColor="@android:color/white"
+                            android:buttonTint="@color/colorAccent"
+                            android:textSize="22dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="10sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/submit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/alfa_slab_one"
+                                    android:text="Buy now !"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/reset"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/alfa_slab_one"
+                                    android:text="Clear Form"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

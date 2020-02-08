@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurant">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UserPage" />
+        <activity android:name=".SignIn"></activity>
+        <activity android:name=".Dish"></activity>
+        <activity android:name=".Dishes"></activity>
+        <activity android:name=".singleDish"></activity>
+        <activity android:name=".Order"></activity>
+        <activity android:name=".Confirmed_Order"></activity>
+        <activity android:name=".Buy"></activity>
+
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".Confirmed_register"></activity>
+
+
+    </application>
+
+
+</manifest>
